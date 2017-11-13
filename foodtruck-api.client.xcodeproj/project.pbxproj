@@ -13,6 +13,7 @@
 		142A49E11FB9652F00F21FFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142A49DF1FB9652F00F21FFD /* LaunchScreen.storyboard */; };
 		142A49EE1FB966AC00F21FFD /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142A49ED1FB966AC00F21FFD /* MainVC.swift */; };
 		142A49F21FB967F200F21FFD /* FoodTruck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142A49F11FB967F200F21FFD /* FoodTruck.swift */; };
+		142A49F41FB9701E00F21FFD /* FoodTruckReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142A49F31FB9701D00F21FFD /* FoodTruckReview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		142A49E21FB9652F00F21FFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		142A49ED1FB966AC00F21FFD /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		142A49F11FB967F200F21FFD /* FoodTruck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruck.swift; sourceTree = "<group>"; };
+		142A49F31FB9701D00F21FFD /* FoodTruckReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckReview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				142A49F11FB967F200F21FFD /* FoodTruck.swift */,
+				142A49F31FB9701D00F21FFD /* FoodTruckReview.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				142A49D71FB9652F00F21FFD /* AppDelegate.swift in Sources */,
 				142A49EE1FB966AC00F21FFD /* MainVC.swift in Sources */,
 				142A49F21FB967F200F21FFD /* FoodTruck.swift in Sources */,
+				142A49F41FB9701E00F21FFD /* FoodTruckReview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
