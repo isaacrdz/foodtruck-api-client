@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		142A49D71FB9652F00F21FFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142A49D61FB9652F00F21FFD /* AppDelegate.swift */; };
-		142A49D91FB9652F00F21FFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142A49D81FB9652F00F21FFD /* ViewController.swift */; };
 		142A49DC1FB9652F00F21FFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142A49DA1FB9652F00F21FFD /* Main.storyboard */; };
 		142A49DE1FB9652F00F21FFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 142A49DD1FB9652F00F21FFD /* Assets.xcassets */; };
 		142A49E11FB9652F00F21FFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142A49DF1FB9652F00F21FFD /* LaunchScreen.storyboard */; };
+		142A49EE1FB966AC00F21FFD /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142A49ED1FB966AC00F21FFD /* MainVC.swift */; };
+		142A49F21FB967F200F21FFD /* FoodTruck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142A49F11FB967F200F21FFD /* FoodTruck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		142A49D31FB9652F00F21FFD /* foodtruck-api.client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "foodtruck-api.client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		142A49D61FB9652F00F21FFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		142A49D81FB9652F00F21FFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		142A49DB1FB9652F00F21FFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		142A49DD1FB9652F00F21FFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		142A49E01FB9652F00F21FFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		142A49E21FB9652F00F21FFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		142A49ED1FB966AC00F21FFD /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		142A49F11FB967F200F21FFD /* FoodTruck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,55 @@
 		142A49D51FB9652F00F21FFD /* foodtruck-api.client */ = {
 			isa = PBXGroup;
 			children = (
-				142A49D61FB9652F00F21FFD /* AppDelegate.swift */,
-				142A49D81FB9652F00F21FFD /* ViewController.swift */,
-				142A49DA1FB9652F00F21FFD /* Main.storyboard */,
-				142A49DD1FB9652F00F21FFD /* Assets.xcassets */,
-				142A49DF1FB9652F00F21FFD /* LaunchScreen.storyboard */,
-				142A49E21FB9652F00F21FFD /* Info.plist */,
+				142A49EC1FB9664700F21FFD /* Controller */,
+				142A49EB1FB9664400F21FFD /* View */,
+				142A49EA1FB9663C00F21FFD /* Model */,
+				142A49E91FB9663500F21FFD /* Resources */,
+				142A49E81FB9662C00F21FFD /* Services */,
 			);
 			path = "foodtruck-api.client";
+			sourceTree = "<group>";
+		};
+		142A49E81FB9662C00F21FFD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		142A49E91FB9663500F21FFD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				142A49DD1FB9652F00F21FFD /* Assets.xcassets */,
+				142A49E21FB9652F00F21FFD /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		142A49EA1FB9663C00F21FFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				142A49F11FB967F200F21FFD /* FoodTruck.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		142A49EB1FB9664400F21FFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				142A49DF1FB9652F00F21FFD /* LaunchScreen.storyboard */,
+				142A49DA1FB9652F00F21FFD /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		142A49EC1FB9664700F21FFD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				142A49D61FB9652F00F21FFD /* AppDelegate.swift */,
+				142A49ED1FB966AC00F21FFD /* MainVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +179,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				142A49D91FB9652F00F21FFD /* ViewController.swift in Sources */,
 				142A49D71FB9652F00F21FFD /* AppDelegate.swift in Sources */,
+				142A49EE1FB966AC00F21FFD /* MainVC.swift in Sources */,
+				142A49F21FB967F200F21FFD /* FoodTruck.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GF5KK69ZR2;
 				INFOPLIST_FILE = "foodtruck-api.client/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ninjamkt.foodtruck-api-client.foodtruck-api-client";
@@ -289,6 +334,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GF5KK69ZR2;
 				INFOPLIST_FILE = "foodtruck-api.client/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ninjamkt.foodtruck-api-client.foodtruck-api-client";
