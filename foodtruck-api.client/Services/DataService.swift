@@ -117,7 +117,7 @@ class DataService {
             var request = URLRequest(url: URL)
             request.httpMethod = "POST"
             
-            guard token = AuthService.instance.authToken else {
+            guard let token = Authservice.instance.authToken else {
                 completion(false)
                 return
             }
@@ -175,7 +175,7 @@ class DataService {
             var request = URLRequest(url: URL)
             request.httpMethod = "POST"
             
-            guard let token = DataService.instance.authToken else {
+            guard let token = Authservice.instance.authToken else {
                 completion(false)
                 return
             }
