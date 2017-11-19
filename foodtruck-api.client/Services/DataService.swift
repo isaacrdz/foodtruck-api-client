@@ -91,12 +91,11 @@ class DataService {
         
     }
     
-    func addNewFoodTruck(_ name: String, country:String, foodtype:String, avgcost:Double, latitude: Double, longitude: Double,completion: @escaping callback ){
+    func addNewFoodTruck(_ name: String, foodtype:String, avgcost:Double, latitude: Double, longitude: Double,completion: @escaping callback ){
         //Construct our JSON
         
         let json:[String: Any] = [
             "name":name,
-            "country":country,
             "foodtype":foodtype,
             "avgcost":avgcost,
             "geometry": [
@@ -117,13 +116,13 @@ class DataService {
             var request = URLRequest(url: URL)
             request.httpMethod = "POST"
             
-            guard let token = Authservice.instance.authToken else {
+            guard let token = AuthService.instance.authToken else {
                 completion(false)
                 return
             }
             
             request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
-            request.addValue("application/json", forHTTPHeaderField: "Content-type")
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
             
             request.httpBody = jsonData
             
@@ -175,7 +174,7 @@ class DataService {
             var request = URLRequest(url: URL)
             request.httpMethod = "POST"
             
-            guard let token = Authservice.instance.authToken else {
+            guard let token = AuthService.instance.authToken else {
                 completion(false)
                 return
             }

@@ -37,6 +37,7 @@ let DEFAULTS_EMAIL = "email"
 //Auth Token
 let DEFAULTS_TOKEN = "authToken"
 
+
 //Register url
 let POST_REGISTER_ACCOUNT = "\(BASE_API_URL)/account/register"
 let POST_LOGIN_ACCOUNT = "\(BASE_API_URL)/account/login"

@@ -13,7 +13,9 @@ class MainVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var dataService = DataService.instance
-    var authService = Authservice.instance
+    var authService = AuthService.instance
+    
+    var logInVC: LogInVC?
     
     
     override func viewDidLoad() {
@@ -30,6 +32,21 @@ class MainVC: UIViewController {
         self.tableView.rowHeight = 120
         
         DataService.instance.getAllFoodTrucks()
+    }
+    func showLoginVC(){
+        logInVC = LogInVC()
+        logInVC?.modalPresentationStyle = UIModalPresentationStyle.formSheet
+        self.present(logInVC!, animated: true, completion: nil)
+        
+    }
+    
+    @IBAction func addButtonTapped(sender: UIButton){
+        if AuthService.instance.isAuthenticated == true {
+            performSegue(withIdentifier: "showAddTruckVC", sender: self)
+        } else {
+            showLoginVC()
+            
+        }
     }
     
 }

@@ -18,6 +18,9 @@
 		142A49F81FB9D92900F21FFD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142A49F71FB9D92900F21FFD /* Constants.swift */; };
 		142A49FA1FBA69C500F21FFD /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142A49F91FBA69C500F21FFD /* AuthService.swift */; };
 		14575C561FBBFFCA006F61B1 /* FoodTruckCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14575C551FBBFFCA006F61B1 /* FoodTruckCell.swift */; };
+		14575C5B1FBE09E1006F61B1 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14575C591FBE09E1006F61B1 /* LogInVC.swift */; };
+		14575C5C1FBE09E1006F61B1 /* LogInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14575C5A1FBE09E1006F61B1 /* LogInVC.xib */; };
+		14575C601FBEC506006F61B1 /* AddTruckVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14575C5F1FBEC506006F61B1 /* AddTruckVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		142A49F71FB9D92900F21FFD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		142A49F91FBA69C500F21FFD /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		14575C551FBBFFCA006F61B1 /* FoodTruckCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckCell.swift; sourceTree = "<group>"; };
+		14575C591FBE09E1006F61B1 /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
+		14575C5A1FBE09E1006F61B1 /* LogInVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInVC.xib; sourceTree = "<group>"; };
+		14575C5F1FBEC506006F61B1 /* AddTruckVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTruckVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,7 @@
 		142A49EB1FB9664400F21FFD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				14575C5A1FBE09E1006F61B1 /* LogInVC.xib */,
 				142A49DF1FB9652F00F21FFD /* LaunchScreen.storyboard */,
 				142A49DA1FB9652F00F21FFD /* Main.storyboard */,
 				14575C551FBBFFCA006F61B1 /* FoodTruckCell.swift */,
@@ -118,6 +125,8 @@
 			children = (
 				142A49D61FB9652F00F21FFD /* AppDelegate.swift */,
 				142A49ED1FB966AC00F21FFD /* MainVC.swift */,
+				14575C591FBE09E1006F61B1 /* LogInVC.swift */,
+				14575C5F1FBEC506006F61B1 /* AddTruckVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -183,6 +192,7 @@
 			files = (
 				142A49E11FB9652F00F21FFD /* LaunchScreen.storyboard in Resources */,
 				142A49DE1FB9652F00F21FFD /* Assets.xcassets in Resources */,
+				14575C5C1FBE09E1006F61B1 /* LogInVC.xib in Resources */,
 				142A49DC1FB9652F00F21FFD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,8 +210,10 @@
 				142A49F41FB9701E00F21FFD /* FoodTruckReview.swift in Sources */,
 				142A49F61FB982C400F21FFD /* DataService.swift in Sources */,
 				142A49F81FB9D92900F21FFD /* Constants.swift in Sources */,
+				14575C601FBEC506006F61B1 /* AddTruckVC.swift in Sources */,
 				142A49FA1FBA69C500F21FFD /* AuthService.swift in Sources */,
 				14575C561FBBFFCA006F61B1 /* FoodTruckCell.swift in Sources */,
+				14575C5B1FBE09E1006F61B1 /* LogInVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
