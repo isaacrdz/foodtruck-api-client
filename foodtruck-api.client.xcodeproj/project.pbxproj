@@ -21,6 +21,7 @@
 		14575C5B1FBE09E1006F61B1 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14575C591FBE09E1006F61B1 /* LogInVC.swift */; };
 		14575C5C1FBE09E1006F61B1 /* LogInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14575C5A1FBE09E1006F61B1 /* LogInVC.xib */; };
 		14575C601FBEC506006F61B1 /* AddTruckVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14575C5F1FBEC506006F61B1 /* AddTruckVC.swift */; };
+		14575C621FC12951006F61B1 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14575C611FC12951006F61B1 /* DetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		14575C591FBE09E1006F61B1 /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
 		14575C5A1FBE09E1006F61B1 /* LogInVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInVC.xib; sourceTree = "<group>"; };
 		14575C5F1FBEC506006F61B1 /* AddTruckVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTruckVC.swift; sourceTree = "<group>"; };
+		14575C611FC12951006F61B1 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				142A49ED1FB966AC00F21FFD /* MainVC.swift */,
 				14575C591FBE09E1006F61B1 /* LogInVC.swift */,
 				14575C5F1FBEC506006F61B1 /* AddTruckVC.swift */,
+				14575C611FC12951006F61B1 /* DetailsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				142A49FA1FBA69C500F21FFD /* AuthService.swift in Sources */,
 				14575C561FBBFFCA006F61B1 /* FoodTruckCell.swift in Sources */,
 				14575C5B1FBE09E1006F61B1 /* LogInVC.swift in Sources */,
+				14575C621FC12951006F61B1 /* DetailsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
