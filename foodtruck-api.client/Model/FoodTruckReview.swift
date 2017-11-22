@@ -25,7 +25,7 @@ struct FoodTruckReview {
             if let reviews = jsonResult as? [Dictionary<String, AnyObject>]{
                 for review in reviews{
                     var newReview = FoodTruckReview()
-                    newReview.id = review["id"] as! String
+                    newReview.id = review["_id"] as! String
                     newReview.title = review["title"] as! String
                     newReview.text = review["text"] as! String
                     

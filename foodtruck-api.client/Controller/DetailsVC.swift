@@ -39,9 +39,29 @@ class DetailsVC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
 
+    @IBAction func reviewsButtonTapped(sender: UIButton){
+        performSegue(withIdentifier: "showReviewsVC", sender: self)
+    }
     
+    @IBAction func addReviewTapped(sender: UIButton){
+        
+    }
     
-   
+    func showLogIn(){
+        logInVC = LogInVC()
+        logInVC?.modalPresentationStyle = UIModalPresentationStyle.formSheet
+        self.present(logInVC!, animated: true, completion: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showReviewsVC"{
+            let destinationViewController = segue.destination as! ReviewsVC
+            destinationViewController.selectedFoodTruck = selectedFoodTruck
+        } else if segue.identifier == "showAddReviewVC"{
+            let destinationViewController = segue.destination as! AddReviewVC
+            destinationViewController.selectedFoodTruck = selectedFoodTruck
+        }
+    }
     
    
     

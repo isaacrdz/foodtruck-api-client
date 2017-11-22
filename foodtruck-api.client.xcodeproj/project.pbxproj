@@ -17,11 +17,14 @@
 		142A49F61FB982C400F21FFD /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142A49F51FB982C400F21FFD /* DataService.swift */; };
 		142A49F81FB9D92900F21FFD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142A49F71FB9D92900F21FFD /* Constants.swift */; };
 		142A49FA1FBA69C500F21FFD /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142A49F91FBA69C500F21FFD /* AuthService.swift */; };
+		144217891FC4BA3B00CDAAA5 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144217881FC4BA3B00CDAAA5 /* ReviewCell.swift */; };
 		14575C561FBBFFCA006F61B1 /* FoodTruckCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14575C551FBBFFCA006F61B1 /* FoodTruckCell.swift */; };
 		14575C5B1FBE09E1006F61B1 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14575C591FBE09E1006F61B1 /* LogInVC.swift */; };
 		14575C5C1FBE09E1006F61B1 /* LogInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14575C5A1FBE09E1006F61B1 /* LogInVC.xib */; };
 		14575C601FBEC506006F61B1 /* AddTruckVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14575C5F1FBEC506006F61B1 /* AddTruckVC.swift */; };
 		14575C621FC12951006F61B1 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14575C611FC12951006F61B1 /* DetailsVC.swift */; };
+		149EADCB1FC490FE00963A64 /* ReviewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149EADCA1FC490FE00963A64 /* ReviewsVC.swift */; };
+		149EADCD1FC4AC0900963A64 /* AddReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149EADCC1FC4AC0900963A64 /* AddReviewVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,11 +40,14 @@
 		142A49F51FB982C400F21FFD /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		142A49F71FB9D92900F21FFD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		142A49F91FBA69C500F21FFD /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		144217881FC4BA3B00CDAAA5 /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
 		14575C551FBBFFCA006F61B1 /* FoodTruckCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckCell.swift; sourceTree = "<group>"; };
 		14575C591FBE09E1006F61B1 /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
 		14575C5A1FBE09E1006F61B1 /* LogInVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInVC.xib; sourceTree = "<group>"; };
 		14575C5F1FBEC506006F61B1 /* AddTruckVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTruckVC.swift; sourceTree = "<group>"; };
 		14575C611FC12951006F61B1 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		149EADCA1FC490FE00963A64 /* ReviewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsVC.swift; sourceTree = "<group>"; };
+		149EADCC1FC4AC0900963A64 /* AddReviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,7 @@
 				142A49DF1FB9652F00F21FFD /* LaunchScreen.storyboard */,
 				142A49DA1FB9652F00F21FFD /* Main.storyboard */,
 				14575C551FBBFFCA006F61B1 /* FoodTruckCell.swift */,
+				144217881FC4BA3B00CDAAA5 /* ReviewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -130,6 +137,8 @@
 				14575C591FBE09E1006F61B1 /* LogInVC.swift */,
 				14575C5F1FBEC506006F61B1 /* AddTruckVC.swift */,
 				14575C611FC12951006F61B1 /* DetailsVC.swift */,
+				149EADCA1FC490FE00963A64 /* ReviewsVC.swift */,
+				149EADCC1FC4AC0900963A64 /* AddReviewVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -207,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				149EADCD1FC4AC0900963A64 /* AddReviewVC.swift in Sources */,
 				142A49D71FB9652F00F21FFD /* AppDelegate.swift in Sources */,
 				142A49EE1FB966AC00F21FFD /* MainVC.swift in Sources */,
 				142A49F21FB967F200F21FFD /* FoodTruck.swift in Sources */,
@@ -215,9 +225,11 @@
 				142A49F81FB9D92900F21FFD /* Constants.swift in Sources */,
 				14575C601FBEC506006F61B1 /* AddTruckVC.swift in Sources */,
 				142A49FA1FBA69C500F21FFD /* AuthService.swift in Sources */,
+				149EADCB1FC490FE00963A64 /* ReviewsVC.swift in Sources */,
 				14575C561FBBFFCA006F61B1 /* FoodTruckCell.swift in Sources */,
 				14575C5B1FBE09E1006F61B1 /* LogInVC.swift in Sources */,
 				14575C621FC12951006F61B1 /* DetailsVC.swift in Sources */,
+				144217891FC4BA3B00CDAAA5 /* ReviewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
