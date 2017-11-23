@@ -32,7 +32,7 @@ class ReviewsVC: UIViewController {
     }
 
     @IBAction func backButtonTapped(sender: UIButton) {
-        _ = navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
     }
     
 }

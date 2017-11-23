@@ -43,8 +43,12 @@ class DetailsVC: UIViewController {
         performSegue(withIdentifier: "showReviewsVC", sender: self)
     }
     
-    @IBAction func addReviewTapped(sender: UIButton){
-        
+    @IBAction func addReviewButtonTapped(_ sender: UIButton) {
+        if AuthService.instance.isAuthenticated == true {
+            performSegue(withIdentifier: "showAddReviewVC", sender: self)
+        } else {
+            showLogIn()
+        }
     }
     
     func showLogIn(){
